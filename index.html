@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Libro de artista</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Menú lateral -->
+    <div class="menu">
+        <ul>
+            <li><a href="#retrato">Retratos</a></li> 
+            <li><a href="#autorretrato">Autorretrato</a></li> 
+            <li><a href="#traduccion">Traducción</a></li>
+            <li><a href="#Postal">Postal</a></li>
+        </ul>
+    </div>
+    
+
+    <h1 class="title">Libro de artista</h1>
+    <h2 class="subtitle">Fermín Nieto A01707069</h2>
+
+    <!-- Catálogo Retratos -->
+    <div id="retrato" class="catalog-container">
+        <div class="portrait-container" id="portraitZoom">
+            <img src="retrato1.jpg" alt="Retrato 1" id="mainImagePortrait">
+        </div>
+        <div class="details-container">
+            <h2>Retratos</h2>
+            <p class="texto">Ejercicio de realización de un retrato de una compañera de clase, se muestra imagen de referencia.</p>
+            <div class="image-thumbnails">
+                <img src="retrato1.jpg" alt="Retrato 1" class="thumbnail" onclick="changeImagePortrait('retrato1.jpg', this)">
+                <img src="retrato2.jpg" alt="Retrato 2" class="thumbnail" onclick="changeImagePortrait('retrato2.jpg', this)">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Catálogo Autorretratos -->
+    <div id="autorretrato" class="catalog-container">
+        <div class="image-container">
+            <div class="image-zoom" id="imageZoom">
+                <img src="autorretrato 1.jpg" alt="Autorretrato 1" id="mainImage">
+            </div>
+        </div>
+        <div class="details-container">
+            <h2>Auto retrato</h2>
+            <p class="texto">Autorretrato de mi mismo, que trata de mostrar mi persona, mediante los cambios del espacio donde pasó la mayor parte del día, mi escritorio.</p>
+            <div class="image-thumbnails">
+                <img src="autorretrato 1.jpg" alt="Autorretrato 1" class="thumbnail" onclick="changeImage('autorretrato 1.jpg', this)">
+                <img src="autorretrato 2.jpg" alt="Autorretrato 2" class="thumbnail" onclick="changeImage('autorretrato 2.jpg', this)">
+                <img src="autorretrato 3.jpg" alt="Autorretrato 3" class="thumbnail" onclick="changeImage('autorretrato 3.jpg', this)">
+                <img src="autorretrato 4.jpg" alt="Autorretrato 4" class="thumbnail" onclick="changeImage('autorretrato 4.jpg', this)">
+                <img src="autorretrato 5.jpg" alt="Autorretrato 5" class="thumbnail" onclick="changeImage('autorretrato 5.jpg', this)">
+                <img src="autorretrato 6.jpg" alt="Autorretrato 6" class="thumbnail" onclick="changeImage('autorretrato 6.jpg', this)">
+                <img src="autorretrato 7.jpg" alt="Autorretrato 7" class="thumbnail" onclick="changeImage('autorretrato 7.jpg', this)">
+                <img src="autorretrato 8.jpg" alt="Autorretrato 8" class="thumbnail" onclick="changeImage('autorretrato 8.jpg', this)">
+                <img src="autorretrato 9.jpg" alt="Autorretrato 9" class="thumbnail" onclick="changeImage('autorretrato 9.jpg', this)">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Catálogo Traducción -->
+    <div id="traduccion" class="translation-section">
+        <div class="translation-container">
+            <img src="traduccion.jpg" alt="Traducción" id="mainImageTranslation">
+        </div>
+        <div class="translation-details">
+            <h2>Traducción</h2>
+            <p class="texto">“El semestre pasado estuve con alguien todo el semestre, pero al final solo fue una pérdida de tiempo, ya que no funcionó y se fue a GDL este semestre y como que no está cerca de él o literal en un estado diferente me ayudó a superar.”
+            </p>
+            <p class="texto">      </p>
+            <p class="texto">Para esta traducción, se trató de reflejar el cómo la persona estava en una relación defectuaza, el agujero negro en el dibujo, y ella es la estrella, que logra escapar del agujero negro. </p>
+        </div>
+    </div>
+    
+
+    <!-- Catálogo Motel -->
+    <div id="postal" class="catalog-container">
+        <div class="image-container">
+            <div class="image-zoom" id="motelZoom">
+                <img src="motel.jpg" alt="Motel" id="motelImage">
+            </div>
+        </div>
+        <div class="details-container">
+            <h2>Postal</h2>
+            <p class="texto">Hola
+                ¿Cómo has estado?
+                Te mando esta postal porque sé que no te gusta mucho el arte, menos el actual, pero en un intento de convencerte de empezar a disfrutar del mismo. El mensaje de esta obra encuentro que para mi es muy concreto, la soledad que viene en los excesos, representado por el motel. Pero esta no es la única interpretación posible, como tal no se sabe la intención final del artista, más allá de tratar de generar una fotografía estética, pero es ahí donde entramos nosotros como espectadores, teniendo que descifrar el mensaje mediante el análisis de la obra y sus detalles. En casos como estos es más frecuente que las interpretaciones sean muy distintas, pero siempre se sigue un patrón en las mismas.
+                Espero vernos pronto, para poder vernos y seguir hablando del tema, sin las limitaciones del espacio de la postal, que me obligó a acabar abruptamente. Besos y abrazos.
+                </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
